@@ -320,6 +320,11 @@ export class BaseControl<T extends BaseControlProps, S extends Element> extends 
     _context: MapContextProps;
 }
 
+export interface ScaleControl extends BaseControlProps {
+    maxWidth?: number,
+    unit?: string
+}
+
 export interface PopupProps extends BaseControlProps {
     className?: string;
     longitude: number;
