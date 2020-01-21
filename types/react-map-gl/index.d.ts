@@ -321,10 +321,8 @@ export class BaseControl<T extends BaseControlProps, S extends Element> extends 
 }
 
 export interface ScaleControlProps extends BaseControlProps {
-    className?: string;
     maxWidth?: number,
     unit?: string
-    style?: React.CSSProperties;
 }
 
 export class ScaleControl extends BaseControl<ScaleControlProps, HTMLDivElement> {}
