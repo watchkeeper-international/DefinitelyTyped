@@ -320,10 +320,15 @@ export class BaseControl<T extends BaseControlProps, S extends Element> extends 
     _context: MapContextProps;
 }
 
-export interface ScaleControl extends BaseControlProps {
+export interface ScaleControlProps extends BaseControlProps {
+    className?: string;
     maxWidth?: number,
     unit?: string
+    style?: React.CSSProperties;
 }
+
+export class ScaleControl extends BaseControl<ScaleControlProps, HTMLDivElement> {}
+
 
 export interface PopupProps extends BaseControlProps {
     className?: string;
